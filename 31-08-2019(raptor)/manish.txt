@@ -1,0 +1,49 @@
+kvsw15@kvsw15-PC MINGW64 ~/desktop/raptor1 (master)
+$ git remote add raptor https://github.com/t-eng/raptor
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/raptor1 (master)
+$ git remote -v
+raptor  https://github.com/t-eng/raptor (fetch)
+raptor  https://github.com/t-eng/raptor (push)
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/raptor1 (master)
+$ ls
+'addition static.rap'      multiplicaation.rap   notequal.rap  'task 2.rap'
+'even or not (task).rap'   name.rap              powers.rap     task.rap
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/raptor1 (master)
+$ git add *
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/raptor1 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/raptor1 (master)
+$ git commit -m "kam"
+On branch master
+nothing to commit, working tree clean
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/raptor1 (master)
+$ git log
+commit 8d2d66c40c8f9717a5275b5673d4b55a1f535705 (HEAD -> master)
+Author: t-eng <manishareddy9491@gmail.com>
+Date:   Sat Aug 31 13:29:07 2019 +0530
+
+    hii
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/raptor1 (master)
+$ git push -u raptor master
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 7.86 KiB | 3.93 MiB/s, done.
+Total 10 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas: 100% (6/6), done.
+To https://github.com/t-eng/raptor
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'raptor'.
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/raptor1 (master)
+$

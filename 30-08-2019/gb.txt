@@ -1,0 +1,88 @@
+kvsw15@kvsw15-PC MINGW64 ~
+$ pwd
+/c/Users/kvsw15
+
+kvsw15@kvsw15-PC MINGW64 ~
+$ cd desktop
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop (master)
+$ cd gitbasics
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ touch gb
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ git init
+Initialized empty Git repository in C:/Users/kvsw15/Desktop/gitbasics/.git/
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ git config user.name "t-eng"
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ git config user.email "manishareddy9491@gmail.com"
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ git remote add gitbasics https://github.com/t-eng/gitbasics
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ git remote -v
+gitbasics       https://github.com/t-eng/gitbasics (fetch)
+gitbasics       https://github.com/t-eng/gitbasics (push)
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ ls
+gb
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ git add gb
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   gb
+
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ git commit -m "mummy"
+[master (root-commit) 5b8e217] mummy
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 gb
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ git log
+commit 5b8e217d5a27d36b057f9715f92f5b71ca0dbb21 (HEAD -> master)
+Author: t-eng <manishareddy9491@gmail.com>
+Date:   Fri Aug 30 15:55:06 2019 +0530
+
+    mummy
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ git push -u gitbasics master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 202 bytes | 202.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/t-eng/gitbasics
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'gitbasics'.
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ git status
+On branch master
+Your branch is up to date with 'gitbasics/master'.
+
+nothing to commit, working tree clean
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$ git pull gitbasics master
+From https://github.com/t-eng/gitbasics
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+kvsw15@kvsw15-PC MINGW64 ~/desktop/gitbasics (master)
+$
